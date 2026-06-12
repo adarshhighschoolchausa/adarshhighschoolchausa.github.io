@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Gallery | PM SHRI +2 ADARSH HIGH SCHOOL CHAUSA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bg-school-blue { background-color: #0c2340; }
+        .text-school-gold { color: #d4af37; }
+        .border-school-gold { border-color: #d4af37; }
+        .bg-school-gold { background-color: #d4af37; }
+        .filter-btn.active { background-color: #d4af37; color: #0c2340; border-color: #d4af37; }
+    </style>
+</head>
+<body class="bg-gray-50 flex flex-col min-h-screen font-sans">
+
+    <header class="bg-school-blue text-white shadow-xl sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-3">
+                <div class="flex items-center space-x-4">
+                    <img src="logo.png" alt="School Logo" class="h-16 w-auto flex-shrink-0">
+                    <div>
+                        <h1 class="text-lg md:text-2xl font-bold leading-tight tracking-tight text-school-gold">PM SHRI +2 ADARSH HIGH SCHOOL</h1>
+                        <p class="text-xs md:text-sm uppercase tracking-widest text-gray-300">Chausa, Buxar</p>
+                    </div>
+                </div>
+                <nav class="hidden xl:flex space-x-5 text-xs font-semibold uppercase">
+    <a href="index.html" class="hover:text-school-gold transition">Home</a>
+    <a href="about.html" class="hover:text-school-gold transition">About Us</a>
+    <a href="academics.html" class="hover:text-school-gold transition">Academics</a>
+    <a href="facilities.html" class="hover:text-school-gold transition">Facilities & Sports</a>
+    <a href="admissions.html" class="hover:text-school-gold transition">Admissions</a>
+    <a href="gallery.html" class="hover:text-school-gold transition">Gallery</a>
+    <a href="portal.html" class="hover:text-school-gold transition">Student Portal</a>
+    <a href="contact.html" class="hover:text-school-gold transition">Contact Us</a>
+</nav>
+                <div class="xl:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M4 6h16M4 12h16m-7 6h7\"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+       <div id="mobile-menu" class="hidden xl:hidden bg-school-blue p-4 space-y-4 text-sm font-semibold uppercase">
+    <a href="index.html" class="block hover:text-school-gold">Home</a>
+    <a href="about.html" class="block hover:text-school-gold">About Us</a>
+    <a href="academics.html" class="block hover:text-school-gold">Academics</a>
+    <a href="facilities.html" class="block hover:text-school-gold">Facilities & Sports</a>
+    <a href="admissions.html" class="block hover:text-school-gold">Admissions</a>
+    <a href="gallery.html" class="block hover:text-school-gold">Gallery</a>
+    <a href="portal.html" class="block hover:text-school-gold">Student Portal</a>
+    <a href="contact.html" class="block hover:text-school-gold">Contact Us</a>
+</div>
+    </header>
+
+    <main class="flex-grow">
+        <section class="bg-school-blue py-12">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold text-white uppercase tracking-tight">Media Gallery</h2>
+                <p class="text-school-gold mt-2 uppercase tracking-widest text-sm">Capturing Moments of Excellence</p>
+            </div>
+        </section>
+
+        <section class="py-8 bg-white shadow-sm border-b">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap justify-center gap-3">
+                    <button id="btn-all" onclick="filterGallery('all', this)" class="filter-btn active px-6 py-2 rounded-full border-2 border-school-blue font-bold text-xs uppercase transition-all">All</button>
+                    <button onclick="filterGallery('academic', this)" class="filter-btn px-6 py-2 rounded-full border-2 border-school-blue text-school-blue font-bold text-xs uppercase hover:bg-school-blue hover:text-white transition-all">Academic Events</button>
+                    <button onclick="filterGallery('cultural', this)" class="filter-btn px-6 py-2 rounded-full border-2 border-school-blue text-school-blue font-bold text-xs uppercase hover:bg-school-blue hover:text-white transition-all">Cultural Activities</button>
+                    <button onclick="filterGallery('national', this)" class="filter-btn px-6 py-2 rounded-full border-2 border-school-blue text-school-blue font-bold text-xs uppercase hover:bg-school-blue hover:text-white transition-all">National Festivals</button>
+                    <button onclick="filterGallery('pmshri', this)" class="filter-btn px-6 py-2 rounded-full border-2 border-school-blue text-school-blue font-bold text-xs uppercase hover:bg-school-blue hover:text-white transition-all">PM SHRI Initiatives</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-12 container mx-auto px-4">
+            <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                
+                <div class="gallery-item academic group relative overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=600" alt="Science Exhibition" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-school-blue/80 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center p-4">
+                        <p class="text-white text-center font-bold uppercase text-sm">Science Exhibition 2024</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item cultural group relative overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1514525253361-b83f859b71c0?auto=format&fit=crop&q=80&w=600" alt="Annual Function" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-school-blue/80 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center p-4">
+                        <p class="text-white text-center font-bold uppercase text-sm">Annual Cultural Day</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item national group relative overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1532375811400-bc725700752b?auto=format&fit=crop&q=80&w=600" alt="Independence Day" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-school-blue/80 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center p-4">
+                        <p class="text-white text-center font-bold uppercase text-sm">Independence Day Celebration</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item pmshri group relative overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1544650030-3c51ad04fe0b?auto=format&fit=crop&q=80&w=600" alt="Smart Class Setup" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-school-blue/80 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center p-4">
+                        <p class="text-white text-center font-bold uppercase text-sm">Smart Classroom Launch</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item academic group relative overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&q=80&w=600" alt="Library Session" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-school-blue/80 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center p-4">
+                        <p class="text-white text-center font-bold uppercase text-sm">Reading & Research Hour</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item pmshri group relative overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1581092921461-7d1568637364?auto=format&fit=crop&q=80&w=600" alt="New Lab Equipment" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-school-blue/80 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center p-4">
+                        <p class="text-white text-center font-bold uppercase text-sm">Modern Lab Equipment Upgrade</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item cultural group relative overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=600" alt="School Fest" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-school-blue/80 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center p-4">
+                        <p class="text-white text-center font-bold uppercase text-sm">Talent Hunt Finale</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item national group relative overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1562664377-709f22578683?auto=format&fit=crop&q=80&w=600" alt="Republic Day" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-school-blue/80 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center p-4">
+                        <p class="text-white text-center font-bold uppercase text-sm">Republic Day Parade</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-school-blue text-gray-300 pt-12 pb-6 border-t-4 border-school-gold">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="space-y-4">
+                <h3 class="text-school-gold font-bold text-xl uppercase">Adarsh High School</h3>
+                <p class="text-sm leading-relaxed">Empowering students with quality education and moral values to excel in the modern world.</p>
+            </div>
+            <div class="space-y-3">
+                <h3 class="text-school-gold font-bold text-lg mb-2">Get In Touch</h3>
+                <p class="text-sm flex items-start"><span class="mr-2">📍</span> Chausa Krishna Puri, Buxar - 802114</p>
+                <p class="text-sm flex items-center"><span class="mr-2">📞</span> 9695940166, 7717742933</p>
+                <p class="text-sm flex items-center"><span class="mr-2">✉️</span> Chausaadarshhighschool@gmail.com</p>
+            </div>
+            <div class="space-y-3">
+                <h3 class="text-school-gold font-bold text-lg mb-2">School Hours</h3>
+                <p class="text-sm">Monday - Saturday:</p>
+                <p class="text-white font-semibold">09:30 AM - 04:00 PM</p>
+            </div>
+            <div class="space-y-4">
+                <h3 class="text-school-gold font-bold text-lg mb-2">Connect With Us</h3>
+                <a href="#" class="inline-flex items-center bg-red-600 text-white px-4 py-2 rounded text-sm hover:bg-red-700 transition">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    YouTube Channel
+                </a>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 mt-12 pt-6 border-t border-blue-900 text-center text-xs text-gray-500">
+            <p>&copy; 2024 PM SHRI +2 ADARSH HIGH SCHOOL CHAUSA. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+
+        // Filter Functionality
+        function filterGallery(category, currentBtn) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            // Reset all filter buttons styling
+            buttons.forEach(btn => {
+                btn.classList.remove('active', 'bg-school-gold', 'text-school-blue');
+                btn.classList.add('text-school-blue');
+            });
+
+            // Set active class on clicked button
+            currentBtn.classList.add('active');
+
+            // Toggle item visibility
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.classList.remove('hidden');
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilities & Sports | PM SHRI +2 ADARSH HIGH SCHOOL CHAUSA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bg-school-blue { background-color: #0c2340; }
+        .text-school-gold { color: #d4af37; }
+        .border-school-gold { border-color: #d4af37; }
+        .bg-school-gold { background-color: #d4af37; }
+    </style>
+</head>
+<body class="bg-gray-50 flex flex-col min-h-screen font-sans">
+
+    <header class="bg-school-blue text-white shadow-xl sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-3">
+                <div class="flex items-center space-x-4">
+                    <img src="logo.png" alt="School Logo" class="h-16 w-auto flex-shrink-0">
+                    <div>
+                        <h1 class="text-lg md:text-2xl font-bold leading-tight tracking-tight text-school-gold">PM SHRI +2 ADARSH HIGH SCHOOL</h1>
+                        <p class="text-xs md:text-sm uppercase tracking-widest text-gray-300">Chausa, Buxar</p>
+                    </div>
+                </div>
+                <nav class="hidden xl:flex space-x-5 text-xs font-semibold uppercase">
+                    <a href="index.html" class="hover:text-school-gold transition">Home</a>
+                    <a href="about.html" class="hover:text-school-gold transition">About Us</a>
+                    <a href="academics.html" class="hover:text-school-gold transition">Academics</a>
+                    <a href="facilities.html" class="hover:text-school-gold transition">Facilities & Sports</a>
+                    <a href="admissions.html" class="hover:text-school-gold transition">Admissions</a>
+                    <a href="gallery.html" class="hover:text-school-gold transition">Gallery</a>
+                    <a href="portal.html" class="hover:text-school-gold transition">Student Portal</a>
+                    <a href="contact.html" class="hover:text-school-gold transition">Contact Us</a>
+                </nav>
+                <div class="xl:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden xl:hidden bg-school-blue p-4 space-y-4 text-sm font-semibold uppercase">
+            <a href="index.html" class="block hover:text-school-gold">Home</a>
+            <a href="about.html" class="block hover:text-school-gold">About Us</a>
+            <a href="academics.html" class="block hover:text-school-gold">Academics</a>
+            <a href="facilities.html" class="block hover:text-school-gold">Facilities & Sports</a>
+            <a href="admissions.html" class="block hover:text-school-gold">Admissions</a>
+            <a href="gallery.html" class="block hover:text-school-gold">Gallery</a>
+            <a href="portal.html" class="block hover:text-school-gold">Student Portal</a>
+            <a href="contact.html" class="block hover:text-school-gold">Contact Us</a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        
+        <section class="bg-school-blue py-12">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold text-white uppercase tracking-tight">Infrastructure & Sports</h2>
+                <div class="w-24 h-1 bg-school-gold mx-auto mt-4"></div>
+            </div>
+        </section>
+
+        <section class="py-16 container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-gray-800">Academic Facilities</h3>
+                <p class="text-gray-500 mt-2">State-of-the-art labs and learning centers for comprehensive development.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition group">
+                    <img src="library.jpeg" alt="Library" class="w-full h-40 object-cover group-hover:scale-105 transition duration-300">
+                    <div class="p-5">
+                        <h4 class="font-bold text-school-blue text-lg mb-2">Library</h4>
+                        <p class="text-gray-600 text-sm">A vast collection of academic books, journals, and reference materials.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition group">
+                    <img src="computer.jpeg" alt="Computer Lab" class="w-full h-40 object-cover group-hover:scale-105 transition duration-300">
+                    <div class="p-5">
+                        <h4 class="font-bold text-school-blue text-lg mb-2">Computer Lab</h4>
+                        <p class="text-gray-600 text-sm">Equipped with high-speed internet and latest software for digital literacy.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition group">
+                    <img src="academic.jpeg" alt="ICT Lab" class="w-full h-40 object-cover group-hover:scale-105 transition duration-300">
+                    <div class="p-5">
+                        <h4 class="font-bold text-school-blue text-lg mb-2">ICT Lab (Smart Class)</h4>
+                        <p class="text-gray-600 text-sm">Interactive smart boards and multimedia tools for modern learning.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition group">
+                    <img src="science.jpg" alt="Science Lab" class="w-full h-40 object-cover group-hover:scale-105 transition duration-300">
+                    <div class="p-5">
+                        <h4 class="font-bold text-school-blue text-lg mb-2">Science Lab</h4>
+                        <p class="text-gray-600 text-sm">Advanced equipment for Physics, Chemistry, and Biology experiments.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition group">
+                    <img src="maths.jpg" alt="Maths Lab" class="w-full h-40 object-cover group-hover:scale-105 transition duration-300">
+                    <div class="p-5">
+                        <h4 class="font-bold text-school-blue text-lg mb-2">Maths Lab</h4>
+                        <p class="text-gray-600 text-sm">Practical tools and models to make mathematical concepts easy and fun.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition group">
+                    <img src="sst.jpg" alt="SST Lab" class="w-full h-40 object-cover group-hover:scale-105 transition duration-300">
+                    <div class="p-5">
+                        <h4 class="font-bold text-school-blue text-lg mb-2">SST Lab</h4>
+                        <p class="text-gray-600 text-sm">Resource center for Geography maps, History timelines, and Civics.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition group">
+                    <img src="music.jpg" alt="Music Room" class="w-full h-40 object-cover group-hover:scale-105 transition duration-300">
+                    <div class="p-5">
+                        <h4 class="font-bold text-school-blue text-lg mb-2">Music Room</h4>
+                        <p class="text-gray-600 text-sm">A creative space for students to learn instruments and vocal music.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition group">
+                    <img src="hall.jpeg" alt="Multipurpose Hall" class="w-full h-40 object-cover group-hover:scale-105 transition duration-300">
+                    <div class="p-5">
+                        <h4 class="font-bold text-school-blue text-lg mb-2">Multipurpose Hall</h4>
+                        <p class="text-gray-600 text-sm">Spacious hall for assemblies, seminars, and cultural events.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-school-blue text-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl font-bold text-school-gold">Sports Arena</h3>
+                    <p class="text-gray-300 mt-2 uppercase tracking-widest text-sm italic">"A Healthy Mind Resides in a Healthy Body"</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div class="bg-white/10 p-8 rounded-2xl border border-white/20">
+                        <h4 class="text-2xl font-bold mb-6 flex items-center">
+                            <span class="mr-3">🏃</span> Outdoor Sports Grounds
+                        </h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="flex items-center space-x-2 bg-white/5 p-3 rounded">
+                                <span class="text-school-gold text-xl">🏏</span>
+                                <span class="font-semibold">Cricket</span>
+                            </div>
+                            <div class="flex items-center space-x-2 bg-white/5 p-3 rounded">
+                                <span class="text-school-gold text-xl">⚽</span>
+                                <span class="font-semibold">Football</span>
+                            </div>
+                            <div class="flex items-center space-x-2 bg-white/5 p-3 rounded">
+                                <span class="text-school-gold text-xl">🏐</span>
+                                <span class="font-semibold">Volleyball</span>
+                            </div>
+                            <div class="flex items-center space-x-2 bg-white/5 p-3 rounded">
+                                <span class="text-school-gold text-xl">🤼</span>
+                                <span class="font-semibold">Kabaddi</span>
+                            </div>
+                            <div class="flex items-center space-x-2 bg-white/5 p-3 rounded">
+                                <span class="text-school-gold text-xl">🏃‍♂️</span>
+                                <span class="font-semibold">Kho-Kho</span>
+                            </div>
+                            <div class="flex items-center space-x-2 bg-white/5 p-3 rounded">
+                                <span class="text-school-gold text-xl">🏸</span>
+                                <span class="font-semibold">Badminton</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white/10 p-8 rounded-2xl border border-white/20">
+                        <h4 class="text-2xl font-bold mb-6 flex items-center">
+                            <span class="mr-3">🎲</span> Indoor Game Zone
+                        </h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="flex items-center space-x-2 bg-white/5 p-3 rounded">
+                                <span class="text-school-gold text-xl">♟️</span>
+                                <span class="font-semibold">Chess</span>
+                            </div>
+                            <div class="flex items-center space-x-2 bg-white/5 p-3 rounded">
+                                <span class="text-school-gold text-xl">🀄</span>
+                                <span class="font-semibold">Carrom</span>
+                            </div>
+                            <div class="flex items-center space-x-2 bg-white/5 p-3 rounded">
+                                <span class="text-school-gold text-xl">🎲</span>
+                                <span class="font-semibold">Ludo</span>
+                            </div>
+                            <div class="flex items-center space-x-2 bg-white/5 p-3 rounded">
+                                <span class="text-school-gold text-xl">🃏</span>
+                                <span class="font-semibold">Card Games</span>
+                            </div>
+                        </div>
+                        <div class="mt-8 text-sm text-gray-400 italic">
+                            * Indoor games are conducted in the common room under faculty supervision.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 container mx-auto px-4">
+            <div class="text-center mb-8">
+                <h3 class="text-3xl font-bold text-gray-800">Sports Day Highlights</h3>
+                <div class="w-20 h-1 bg-school-gold mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="aspect-square rounded-lg overflow-hidden group shadow-md bg-gray-100">
+                    <img src=sports1.jpeg alt="Cricket Match" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden group shadow-md bg-gray-100">
+                    <img src=sports2.jpeg alt="Football Training" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden group shadow-md bg-gray-100">
+                    <img src=sports3.jpeg alt="Athletics Sprint" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden group shadow-md bg-gray-100">
+                    <img src=sports4.jpeg alt="Indoor Board Games" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-school-blue text-gray-300 pt-12 pb-6 border-t-4 border-school-gold">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="space-y-4">
+                <h3 class="text-school-gold font-bold text-xl uppercase">Adarsh High School</h3>
+                <p class="text-sm leading-relaxed">Empowering students with quality education and moral values to excel in the modern world.</p>
+            </div>
+            <div class="space-y-3">
+                <h3 class="text-school-gold font-bold text-lg mb-2">Get In Touch</h3>
+                <p class="text-sm flex items-start"><span class="mr-2">📍</span> Chausa Krishna Puri, Buxar - 802114</p>
+                <p class="text-sm flex items-center"><span class="mr-2">📞</span> 9695940166, 7717742933</p>
+                <p class="text-sm flex items-center"><span class="mr-2">✉️</span> Chausaadarshhighschool@gmail.com</p>
+            </div>
+            <div class="space-y-3">
+                <h3 class="text-school-gold font-bold text-lg mb-2">School Hours</h3>
+                <p class="text-sm">Monday - Saturday:</p>
+                <p class="text-white font-semibold">09:30 AM - 04:00 PM</p>
+            </div>
+            <div class="space-y-4">
+                <h3 class="text-school-gold font-bold text-lg mb-2">Connect With Us</h3>
+                <a href="#" class="inline-flex items-center bg-red-600 text-white px-4 py-2 rounded text-sm hover:bg-red-700 transition">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93 .502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    YouTube Channel
+                </a>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 mt-12 pt-6 border-t border-blue-900 text-center text-xs text-gray-500">
+            <p>&copy; 2024 PM SHRI +2 ADARSH HIGH SCHOOL CHAUSA. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

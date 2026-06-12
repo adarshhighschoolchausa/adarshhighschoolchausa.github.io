@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal | PM SHRI +2 ADARSH HIGH SCHOOL CHAUSA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bg-school-blue { background-color: #0c2340; }
+        .text-school-gold { color: #d4af37; }
+        .border-school-gold { border-color: #d4af37; }
+        .bg-school-gold { background-color: #d4af37; }
+        @media print { .no-print { display: none; } body { background: white; } }
+    </style>
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen font-sans">
+
+    <header class="bg-school-blue text-white shadow-xl sticky top-0 z-50 no-print">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-3">
+                <div class="flex items-center space-x-4">
+                    <img src="logo.png" alt="School Logo" class="h-16 w-auto flex-shrink-0">
+                    <div>
+                        <h1 class="text-lg md:text-2xl font-bold leading-tight tracking-tight text-school-gold">PM SHRI +2 ADARSH HIGH SCHOOL</h1>
+                        <p class="text-xs md:text-sm uppercase tracking-widest text-gray-300">Chausa, Buxar</p>
+                    </div>
+                </div>
+                <nav class="hidden xl:flex space-x-5 text-xs font-semibold uppercase">
+                    <a href="index.html" class="hover:text-school-gold transition">Home</a>
+                    <a href="about.html" class="hover:text-school-gold transition">About Us</a>
+                    <a href="academics.html" class="hover:text-school-gold transition">Academics</a>
+                    <a href="facilities.html" class="hover:text-school-gold transition">Facilities & Sports</a>
+                    <a href="admissions.html" class="hover:text-school-gold transition">Admissions</a>
+                    <a href="gallery.html" class="hover:text-school-gold transition">Gallery</a>
+                    <a href="portal.html" class="text-school-gold border-b-2 border-school-gold pb-1">Student Portal</a>
+                    <a href="contact.html" class="hover:text-school-gold transition">Contact Us</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        
+        <section id="loginSection" class="py-12 px-4">
+            <div class="max-w-md mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-200">
+                <div class="bg-school-blue p-6 text-center text-white">
+                    <h2 class="text-2xl font-bold uppercase tracking-tight">Student Login</h2>
+                    <p class="text-xs text-school-gold mt-1 uppercase font-semibold">Verify Roll No & Name</p>
+                </div>
+                <form id="portalForm" class="p-8 space-y-6">
+                    <div>
+                        <label class="block text-xs font-bold text-gray-500 uppercase mb-2 tracking-wide">Registration / Roll Number</label>
+                        <input type="text" id="rollInput" placeholder="e.g. 2400105" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-school-blue focus:outline-none transition" required>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-500 uppercase mb-2 tracking-wide">Student Full Name</label>
+                        <input type="text" id="nameInput" placeholder="Enter Full Name (e.g. Amit Kumar)" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-school-blue focus:outline-none transition" required>
+                    </div>
+                    <button type="submit" id="submitBtn" class="w-full bg-school-blue text-white py-4 rounded-lg font-bold uppercase tracking-widest hover:bg-blue-900 transition shadow-lg transform active:scale-95">
+                        View Result
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <section id="resultSection" class="hidden py-12 container mx-auto px-4">
+            <div class="max-w-4xl mx-auto space-y-8">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
+                    <div class="bg-gray-100 px-6 py-3 font-bold text-gray-700 text-sm uppercase tracking-wider">Student Profile</div>
+                    <table class="w-full text-left">
+                        <tbody class="divide-y divide-gray-100">
+                            <tr><td class="px-6 py-4 font-bold text-gray-500 text-sm bg-gray-50 w-1/3">Full Name</td><td id="disp-name" class="px-6 py-4 font-bold text-school-blue uppercase"></td></tr>
+                            <tr><td class="px-6 py-4 font-bold text-gray-500 text-sm bg-gray-50">Roll Number</td><td id="disp-roll" class="px-6 py-4 text-gray-700 font-semibold"></td></tr>
+                            <tr><td class="px-6 py-4 font-bold text-gray-500 text-sm bg-gray-50">Class</td><td id="disp-class" class="px-6 py-4 text-gray-700 uppercase"></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
+                    <div class="bg-school-blue px-6 py-3 font-bold text-white text-sm uppercase text-center">Marksheet</div>
+                    <table class="w-full text-center border-collapse">
+                        <thead><tr class="bg-gray-50 text-xs uppercase border-b"><th class="px-6 py-4 text-left border-r">Subject</th><th class="px-6 py-4">Marks</th></tr></thead>
+                        <tbody class="divide-y divide-gray-100 text-sm">
+                            <tr><td class="px-6 py-4 text-left font-bold border-r">Mathematics</td><td id="disp-math" class="px-6 py-4"></td></tr>
+                            <tr><td class="px-6 py-4 text-left font-bold border-r">Science</td><td id="disp-sci" class="px-6 py-4"></td></tr>
+                            <tr><td class="px-6 py-4 text-left font-bold border-r">English</td><td id="disp-eng" class="px-6 py-4"></td></tr>
+                            <tr class="bg-yellow-50 font-black text-school-blue border-t-2"><td class="px-6 py-4 text-left border-r">TOTAL</td><td id="disp-total" class="px-6 py-4"></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="text-center no-print">
+                    <button onclick="window.print()" class="bg-school-gold text-school-blue px-8 py-4 rounded-full font-black shadow-xl hover:bg-yellow-500 transition">PRINT RESULT</button>
+                    <button onclick="location.reload()" class="ml-4 text-gray-500 underline text-sm">Logout</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Updated deployment URL
+        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyz4eW8TMEPmDML7TAKbl6OXuIrlAfki0yPZkApsZ63WlsWzgCtdmVFi-EO6qVjRZ-V/exec";
+
+        document.getElementById('portalForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const btn = document.getElementById('submitBtn');
+            const roll = document.getElementById('rollInput').value.trim();
+            const name = document.getElementById('nameInput').value.trim();
+
+            btn.innerText = "Searching...";
+            btn.disabled = true;
+
+            fetch(`${SCRIPT_URL}?roll=${encodeURIComponent(roll)}&name=${encodeURIComponent(name)}`)
+                .then(res => res.json())
+                .then(data => {
+                    if(data.status === "success") {
+                        document.getElementById('disp-name').innerText = data.name;
+                        document.getElementById('disp-roll').innerText = roll;
+                        document.getElementById('disp-class').innerText = data.class;
+                        document.getElementById('disp-math').innerText = data.math;
+                        document.getElementById('disp-sci').innerText = data.science;
+                        document.getElementById('disp-eng').innerText = data.english;
+                        document.getElementById('disp-total').innerText = data.total;
+
+                        document.getElementById('loginSection').classList.add('hidden');
+                        document.getElementById('resultSection').classList.remove('hidden');
+                    } else {
+                        alert("Record not found! Ensure the Roll Number and Name match the Google Sheet exactly.");
+                        btn.innerText = "View Result";
+                        btn.disabled = false;
+                    }
+                })
+                .catch(err => {
+                    alert("Connection error. Ensure your script is deployed to 'Anyone'.");
+                    btn.innerText = "View Result";
+                    btn.disabled = false;
+                });
+        });
+    </script>
+</body>
+</html>

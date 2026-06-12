@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | PM SHRI +2 ADARSH HIGH SCHOOL CHAUSA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bg-school-blue { background-color: #0c2340; }
+        .text-school-gold { color: #d4af37; }
+        .border-school-gold { border-color: #d4af37; }
+        .bg-school-gold { background-color: #d4af37; }
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .marquee-text {
+            display: inline-block;
+            animation: marquee 20s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 flex flex-col min-h-screen font-sans">
+
+    <header class="bg-school-blue text-white shadow-xl sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-3">
+                <div class="flex items-center space-x-4">
+                    <img src="logo.png" alt="School Logo" class="h-16 w-auto flex-shrink-0">
+                    <div>
+                        <h1 class="text-lg md:text-2xl font-bold leading-tight tracking-tight text-school-gold">
+                            PM SHRI +2 ADARSH HIGH SCHOOL
+                        </h1>
+                        <p class="text-xs md:text-sm uppercase tracking-widest text-gray-300">Chausa, Buxar</p>
+                    </div>
+                </div>
+                <nav class="hidden xl:flex space-x-5 text-xs font-semibold uppercase">
+                    <a href="index.html" class="hover:text-school-gold transition">Home</a>
+                    <a href="about.html" class="hover:text-school-gold transition">About Us</a>
+                    <a href="academics.html" class="hover:text-school-gold transition">Academics</a>
+                    <a href="facilities.html" class="hover:text-school-gold transition">Facilities & Sports</a>
+                    <a href="admissions.html" class="hover:text-school-gold transition">Admissions</a>
+                    <a href="gallery.html" class="hover:text-school-gold transition">Gallery</a>
+                    <a href="portal.html" class="hover:text-school-gold transition">Student Portal</a>
+                    <a href="contact.html" class="hover:text-school-gold transition">Contact Us</a>
+                </nav>
+                <div class="xl:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden xl:hidden bg-school-blue p-4 space-y-4 text-sm font-semibold uppercase">
+            <a href="index.html" class="block hover:text-school-gold">Home</a>
+            <a href="about.html" class="block hover:text-school-gold">About Us</a>
+            <a href="academics.html" class="block hover:text-school-gold">Academics</a>
+            <a href="facilities.html" class="block hover:text-school-gold">Facilities & Sports</a>
+            <a href="admissions.html" class="block hover:text-school-gold">Admissions</a>
+            <a href="gallery.html" class="block hover:text-school-gold">Gallery</a>
+            <a href="portal.html" class="block hover:text-school-gold">Student Portal</a>
+            <a href="contact.html" class="block hover:text-school-gold">Contact Us</a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        
+        <section class="relative h-[500px] flex items-center justify-center text-white overflow-hidden">
+            <img src="schoolbuilding.jpeg" alt="School Building" class="absolute inset-0 w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+            <div class="relative z-10 text-center px-4">
+                <h2 class="text-4xl md:text-6xl font-black mb-4 tracking-tight">PM SHRI +2 ADARSH HIGH SCHOOL</h2>
+                <p class="text-2xl md:text-3xl text-school-gold font-serif italic mb-8">"Service Before Self"</p>
+                <div class="flex flex-col md:flex-row justify-center gap-4">
+                    <a href="#" class="bg-school-gold text-school-blue px-8 py-3 rounded font-bold text-lg hover:bg-yellow-500 transition shadow-lg">Apply Online</a>
+                    <a href="#" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded font-bold text-lg hover:bg-white hover:text-school-blue transition shadow-lg">Student Portal</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="w-full md:w-1/3">
+                        <div class="relative">
+                            <img src="brajesh_kumar.jpg" alt="Brajesh Kumar - Head In-Charge" class="rounded-lg shadow-2xl border-4 border-school-gold w-full h-[450px] object-cover">
+                            <div class="absolute -bottom-4 left-4 right-4 bg-school-blue text-white p-3 text-center rounded">
+                                <h4 class="font-bold text-lg">Brajesh Kumar</h4>
+                                <p class="text-school-gold text-xs uppercase tracking-widest">Head In-Charge</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <h3 class="text-3xl font-bold text-school-blue mb-2">From the Principal's Desk</h3>
+                        <div class="w-20 h-1 bg-school-gold mb-6"></div>
+                        <p class="text-gray-700 leading-relaxed mb-4 text-lg italic">
+                            "Welcome to PM SHRI +2 Adarsh High School, Chausa. We believe in fostering an environment where academic excellence is paired with character building. Our mission is to prepare students to face global challenges with integrity and resilience."
+                        </p>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            At our institution, we focus on the holistic development of every child, ensuring they have access to the best facilities, sports, and technical education. I invite you to be a part of our journey towards excellence and service to the nation.
+                        </p>
+                        <p class="font-bold text-school-blue">Warm Regards,<br>Brajesh Kumar</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-12 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    
+                    <div class="lg:col-span-2 bg-white border-l-4 border-school-blue shadow-md rounded overflow-hidden">
+                        <div class="bg-school-blue text-white px-6 py-3 font-bold flex justify-between">
+                            <span>LATEST ANNOUNCEMENTS</span>
+                            <span class="animate-pulse text-red-400">NEW ●</span>
+                        </div>
+                        <div class="p-6 h-64 overflow-y-auto">
+                            <ul class="space-y-4">
+                                <li class="flex items-start pb-3 border-b border-gray-100">
+                                    <span class="bg-school-gold text-school-blue text-[10px] font-bold px-2 py-1 rounded mr-3 mt-1">AUG 1</span>
+                                    <p class="text-gray-700 font-medium">Online Registration for the 2026 Academic session is now open. Apply through the portal.</p>
+                                </li>
+                                                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-white shadow-md rounded border border-gray-200">
+                        <div class="bg-school-gold text-school-blue px-6 py-3 font-bold border-b border-school-gold">
+                            QUICK DOWNLOADS
+                        </div>
+                        <div class="p-4 flex flex-col space-y-3">
+                            
+                            <a href="notice.pdf" target="_blank" class="flex items-center justify-between p-3 bg-gray-50 hover:bg-blue-50 border border-gray-200 rounded transition group">
+                                <span class="text-sm font-semibold text-gray-700 group-hover:text-school-blue uppercase tracking-tight">Latest Notice</span>
+                                <span class="text-school-blue text-xs font-bold">[PDF] ⬇</span>
+                            </a>
+
+                            <a href="calendar.pdf" target="_blank" class="flex items-center justify-between p-3 bg-gray-50 hover:bg-blue-50 border border-gray-200 rounded transition group">
+                                <span class="text-sm font-semibold text-gray-700 group-hover:text-school-blue uppercase tracking-tight">Academic Calendar</span>
+                                <span class="text-school-blue text-xs font-bold">[PDF] ⬇</span>
+                            </a>
+
+                            <a href="datesheet.pdf" target="_blank" class="flex items-center justify-between p-3 bg-gray-50 hover:bg-blue-50 border border-gray-200 rounded transition group">
+                                <span class="text-sm font-semibold text-gray-700 group-hover:text-school-blue uppercase tracking-tight">Exam Datesheet</span>
+                                <span class="text-school-blue text-xs font-bold">[PDF] ⬇</span>
+                            </a>
+
+                        </div>
+                        <div class="p-4">
+                            <p class="text-[10px] text-gray-400 text-center uppercase tracking-widest italic">Updates weekly</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-school-blue text-gray-300 pt-12 pb-6 border-t-4 border-school-gold">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="space-y-4">
+                <h3 class="text-school-gold font-bold text-xl uppercase">Adarsh High School</h3>
+                <p class="text-sm leading-relaxed">Empowering students with quality education and moral values to excel in the modern world.</p>
+            </div>
+            <div class="space-y-3">
+                <h3 class="text-school-gold font-bold text-lg mb-2">Get In Touch</h3>
+                <p class="text-sm flex items-start"><span class="mr-2">📍</span> Chausa Krishna Puri, Buxar - 802114</p>
+                <p class="text-sm flex items-center"><span class="mr-2">📞</span> 9695940166, 7717742933</p>
+                <p class="text-sm flex items-center"><span class="mr-2">✉️</span> Chausaadarshhighschool@gmail.com</p>
+            </div>
+            <div class="space-y-3">
+                <h3 class="text-school-gold font-bold text-lg mb-2">School Hours</h3>
+                <p class="text-sm">Monday - Saturday:</p>
+                <p class="text-white font-semibold">09:30 AM - 04:00 PM</p>
+            </div>
+            <div class="space-y-4">
+                <h3 class="text-school-gold font-bold text-lg mb-2">Connect With Us</h3>
+                <a href="#" class="inline-flex items-center bg-red-600 text-white px-4 py-2 rounded text-sm hover:bg-red-700 transition">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93 .502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    YouTube Channel
+                </a>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 mt-12 pt-6 border-t border-blue-900 text-center text-xs text-gray-500">
+            <p>&copy; 2024 PM SHRI +2 ADARSH HIGH SCHOOL CHAUSA. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
