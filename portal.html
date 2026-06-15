@@ -79,12 +79,33 @@
                 <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
                     <div class="bg-school-blue px-6 py-3 font-bold text-white text-sm uppercase text-center">Marksheet</div>
                     <table class="w-full text-center border-collapse">
-                        <thead><tr class="bg-gray-50 text-xs uppercase border-b"><th class="px-6 py-4 text-left border-r">Subject</th><th class="px-6 py-4">Marks</th></tr></thead>
+                        <thead>
+                            <tr class="bg-gray-50 text-xs uppercase border-b">
+                                <th class="px-6 py-4 text-left border-r">Subject</th>
+                                <th class="px-6 py-4">Marks</th>
+                            </tr>
+                        </thead>
                         <tbody class="divide-y divide-gray-100 text-sm">
                             <tr><td class="px-6 py-4 text-left font-bold border-r">Mathematics</td><td id="disp-math" class="px-6 py-4"></td></tr>
                             <tr><td class="px-6 py-4 text-left font-bold border-r">Science</td><td id="disp-sci" class="px-6 py-4"></td></tr>
                             <tr><td class="px-6 py-4 text-left font-bold border-r">English</td><td id="disp-eng" class="px-6 py-4"></td></tr>
-                            <tr class="bg-yellow-50 font-black text-school-blue border-t-2"><td class="px-6 py-4 text-left border-r">TOTAL</td><td id="disp-total" class="px-6 py-4"></td></tr>
+                            <tr><td class="px-6 py-4 text-left font-bold border-r">Hindi</td><td id="disp-hindi" class="px-6 py-4"></td></tr>
+                            <tr><td class="px-6 py-4 text-left font-bold border-r">SST</td><td id="disp-sst" class="px-6 py-4"></td></tr>
+                            <tr><td class="px-6 py-4 text-left font-bold border-r">Philosophy</td><td id="disp-phil" class="px-6 py-4"></td></tr>
+                            <tr><td class="px-6 py-4 text-left font-bold border-r">History</td><td id="disp-hist" class="px-6 py-4"></td></tr>
+                            <tr><td class="px-6 py-4 text-left font-bold border-r">Geography</td><td id="disp-geog" class="px-6 py-4"></td></tr>
+                            <tr><td class="px-6 py-4 text-left font-bold border-r">Political Science</td><td id="disp-polsci" class="px-6 py-4"></td></tr>
+                            <tr><td class="px-6 py-4 text-left font-bold border-r">Psychology</td><td id="disp-psych" class="px-6 py-4"></td></tr>
+                            <tr><td class="px-6 py-4 text-left font-bold border-r">BST</td><td id="disp-bst" class="px-6 py-4"></td></tr>
+                            <tr><td class="px-6 py-4 text-left font-bold border-r">Accountancy</td><td id="disp-acc" class="px-6 py-4"></td></tr>
+                            <tr><td class="px-6 py-4 text-left font-bold border-r">Entrepreneurship</td><td id="disp-ep" class="px-6 py-4"></td></tr>
+                            <tr><td class="px-6 py-4 text-left font-bold border-r">Physics</td><td id="disp-phy" class="px-6 py-4"></td></tr>
+                            <tr><td class="px-6 py-4 text-left font-bold border-r">Chemistry</td><td id="disp-chem" class="px-6 py-4"></td></tr>
+                            <tr><td class="px-6 py-4 text-left font-bold border-r">Biology</td><td id="disp-bio" class="px-6 py-4"></td></tr>
+                            <tr class="bg-yellow-50 font-black text-school-blue border-t-2">
+                                <td class="px-6 py-4 text-left border-r">TOTAL</td>
+                                <td id="disp-total" class="px-6 py-4"></td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -98,7 +119,7 @@
     </main>
 
     <script>
-        // Updated deployment URL
+        // Deployment URL
         const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxlYrwpQGlAP_TiCGz6LfqKxlrTBn7-g0xsZFWd362jnFSsmpnUywUuAcWuQtxjGJ66/exec";
 
         document.getElementById('portalForm').addEventListener('submit', function(e) {
@@ -117,10 +138,42 @@
                         document.getElementById('disp-name').innerText = data.name;
                         document.getElementById('disp-roll').innerText = roll;
                         document.getElementById('disp-class').innerText = data.class;
-                        document.getElementById('disp-math').innerText = data.math;
-                        document.getElementById('disp-sci').innerText = data.science;
-                        document.getElementById('disp-eng').innerText = data.english;
-                        document.getElementById('disp-total').innerText = data.total;
+
+                        // Subject mapping configuration list array to process everything easily
+                        const subjects = [
+                            { id: 'disp-math', key: 'math' },
+                            { id: 'disp-sci', key: 'science' },
+                            { id: 'disp-eng', key: 'english' },
+                            { id: 'disp-hindi', key: 'hindi' },
+                            { id: 'disp-sst', key: 'sst' },
+                            { id: 'disp-phil', key: 'philosophy' },
+                            { id: 'disp-hist', key: 'history' },
+                            { id: 'disp-geog', key: 'geography' },
+                            { id: 'disp-polsci', key: 'politicalScience' },
+                            { id: 'disp-psych', key: 'psychology' },
+                            { id: 'disp-bst', key: 'bst' },
+                            { id: 'disp-acc', key: 'accountancy' },
+                            { id: 'disp-ep', key: 'entrepreneurship' },
+                            { id: 'disp-phy', key: 'physics' },
+                            { id: 'disp-chem', key: 'chemistry' },
+                            { id: 'disp-bio', key: 'biology' }
+                        ];
+
+                        let totalMarks = 0;
+                        let validMarksFound = false;
+
+                        // Render marks and dynamically compile totals cleanly
+                        subjects.forEach(sub => {
+                            const score = data[sub.key];
+                            document.getElementById(sub.id).innerText = score;
+                            
+                            if (score !== "N/A" && score !== "" && !isNaN(score)) {
+                                totalMarks += Number(score);
+                                validMarksFound = true;
+                            }
+                        });
+
+                        document.getElementById('disp-total').innerText = validMarksFound ? totalMarks : "N/A";
 
                         document.getElementById('loginSection').classList.add('hidden');
                         document.getElementById('resultSection').classList.remove('hidden');
