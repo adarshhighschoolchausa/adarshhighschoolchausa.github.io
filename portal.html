@@ -85,22 +85,22 @@
                             </tr>
                         </thead>
                         <tbody id="marks-table-body" class="divide-y divide-gray-100 text-sm">
-                            <tr><td class="px-6 py-4 text-left font-bold border-r">Mathematics</td><td id="disp-math" class="px-6 py-4"></td></tr>
-                            <tr><td class="px-6 py-4 text-left font-bold border-r">Science</td><td id="disp-sci" class="px-6 py-4"></td></tr>
-                            <tr><td class="px-6 py-4 text-left font-bold border-r">English</td><td id="disp-eng" class="px-6 py-4"></td></tr>
-                            <tr><td class="px-6 py-4 text-left font-bold border-r">Hindi</td><td id="disp-hindi" class="px-6 py-4"></td></tr>
-                            <tr><td class="px-6 py-4 text-left font-bold border-r">SST</td><td id="disp-sst" class="px-6 py-4"></td></tr>
-                            <tr><td class="px-6 py-4 text-left font-bold border-r">Philosophy</td><td id="disp-phil" class="px-6 py-4"></td></tr>
-                            <tr><td class="px-6 py-4 text-left font-bold border-r">History</td><td id="disp-hist" class="px-6 py-4"></td></tr>
-                            <tr><td class="px-6 py-4 text-left font-bold border-r">Geography</td><td id="disp-geog" class="px-6 py-4"></td></tr>
-                            <tr><td class="px-6 py-4 text-left font-bold border-r">Political Science</td><td id="disp-polsci" class="px-6 py-4"></td></tr>
-                            <tr><td class="px-6 py-4 text-left font-bold border-r">Psychology</td><td id="disp-psych" class="px-6 py-4"></td></tr>
-                            <tr><td class="px-6 py-4 text-left font-bold border-r">BST</td><td id="disp-bst" class="px-6 py-4"></td></tr>
-                            <tr><td class="px-6 py-4 text-left font-bold border-r">Accountancy</td><td id="disp-acc" class="px-6 py-4"></td></tr>
-                            <tr><td class="px-6 py-4 text-left font-bold border-r">Entrepreneurship</td><td id="disp-ep" class="px-6 py-4"></td></tr>
-                            <tr><td class="px-6 py-4 text-left font-bold border-r">Physics</td><td id="disp-phy" class="px-6 py-4"></td></tr>
-                            <tr><td class="px-6 py-4 text-left font-bold border-r">Chemistry</td><td id="disp-chem" class="px-6 py-4"></td></tr>
-                            <tr><td class="px-6 py-4 text-left font-bold border-r">Biology</td><td id="disp-bio" class="px-6 py-4"></td></tr>
+                            <tr id="row-math"><td class="px-6 py-4 text-left font-bold border-r">Mathematics</td><td id="disp-math" class="px-6 py-4"></td></tr>
+                            <tr id="row-sci"><td class="px-6 py-4 text-left font-bold border-r">Science</td><td id="disp-sci" class="px-6 py-4"></td></tr>
+                            <tr id="row-eng"><td class="px-6 py-4 text-left font-bold border-r">English</td><td id="disp-eng" class="px-6 py-4"></td></tr>
+                            <tr id="row-hindi"><td class="px-6 py-4 text-left font-bold border-r">Hindi</td><td id="disp-hindi" class="px-6 py-4"></td></tr>
+                            <tr id="row-sst"><td class="px-6 py-4 text-left font-bold border-r">SST</td><td id="disp-sst" class="px-6 py-4"></td></tr>
+                            <tr id="row-phil"><td class="px-6 py-4 text-left font-bold border-r">Philosophy</td><td id="disp-phil" class="px-6 py-4"></td></tr>
+                            <tr id="row-hist"><td class="px-6 py-4 text-left font-bold border-r">History</td><td id="disp-hist" class="px-6 py-4"></td></tr>
+                            <tr id="row-geog"><td class="px-6 py-4 text-left font-bold border-r">Geography</td><td id="disp-geog" class="px-6 py-4"></td></tr>
+                            <tr id="row-polsci"><td class="px-6 py-4 text-left font-bold border-r">Political Science</td><td id="disp-polsci" class="px-6 py-4"></td></tr>
+                            <tr id="row-psych"><td class="px-6 py-4 text-left font-bold border-r">Psychology</td><td id="disp-psych" class="px-6 py-4"></td></tr>
+                            <tr id="row-bst"><td class="px-6 py-4 text-left font-bold border-r">BST</td><td id="disp-bst" class="px-6 py-4"></td></tr>
+                            <tr id="row-acc"><td class="px-6 py-4 text-left font-bold border-r">Accountancy</td><td id="disp-acc" class="px-6 py-4"></td></tr>
+                            <tr id="row-ep"><td class="px-6 py-4 text-left font-bold border-r">Entrepreneurship</td><td id="disp-ep" class="px-6 py-4"></td></tr>
+                            <tr id="row-phy"><td class="px-6 py-4 text-left font-bold border-r">Physics</td><td id="disp-phy" class="px-6 py-4"></td></tr>
+                            <tr id="row-chem"><td class="px-6 py-4 text-left font-bold border-r">Chemistry</td><td id="disp-chem" class="px-6 py-4"></td></tr>
+                            <tr id="row-bio"><td class="px-6 py-4 text-left font-bold border-r">Biology</td><td id="disp-bio" class="px-6 py-4"></td></tr>
                             <tr class="bg-yellow-50 font-black text-school-blue border-t-2">
                                 <td class="px-6 py-4 text-left border-r">TOTAL</td>
                                 <td id="disp-total" class="px-6 py-4"></td>
@@ -142,22 +142,22 @@
                         document.getElementById('disp-class').innerText = data.class;
 
                         const subjects = [
-                            { id: 'disp-math',    key: 'math' },
-                            { id: 'disp-sci',     key: 'science' },
-                            { id: 'disp-eng',     key: 'english' },
-                            { id: 'disp-hindi',   key: 'hindi' },
-                            { id: 'disp-sst',     key: 'sst' },
-                            { id: 'disp-phil',    key: 'philosophy' },
-                            { id: 'disp-hist',    key: 'history' },
-                            { id: 'disp-geog',    key: 'geography' },
-                            { id: 'disp-polsci',  key: 'politicalScience' },
-                            { id: 'disp-psych',   key: 'psychology' },
-                            { id: 'disp-bst',     key: 'bst' },
-                            { id: 'disp-acc',     key: 'accountancy' },
-                            { id: 'disp-ep',      key: 'entrepreneurship' },
-                            { id: 'disp-phy',     key: 'physics' },
-                            { id: 'disp-chem',    key: 'chemistry' },
-                            { id: 'disp-bio',     key: 'biology' }
+                            { rowId: 'row-math',   id: 'disp-math',   key: 'math' },
+                            { rowId: 'row-sci',    id: 'disp-sci',    key: 'science' },
+                            { rowId: 'row-eng',    id: 'disp-eng',    key: 'english' },
+                            { rowId: 'row-hindi',  id: 'disp-hindi',  key: 'hindi' },
+                            { rowId: 'row-sst',    id: 'disp-sst',    key: 'sst' },
+                            { rowId: 'row-phil',   id: 'disp-phil',   key: 'philosophy' },
+                            { rowId: 'row-hist',   id: 'disp-hist',   key: 'history' },
+                            { rowId: 'row-geog',   id: 'disp-geog',   key: 'geography' },
+                            { rowId: 'row-polsci', id: 'disp-polsci', key: 'politicalScience' },
+                            { rowId: 'row-psych',  id: 'disp-psych',  key: 'psychology' },
+                            { rowId: 'row-bst',    id: 'disp-bst',    key: 'bst' },
+                            { rowId: 'row-acc',    id: 'disp-acc',    key: 'accountancy' },
+                            { rowId: 'row-ep',     id: 'disp-ep',     key: 'entrepreneurship' },
+                            { rowId: 'row-phy',    id: 'disp-phy',    key: 'physics' },
+                            { rowId: 'row-chem',   id: 'disp-chem',   key: 'chemistry' },
+                            { rowId: 'row-bio',    id: 'disp-bio',    key: 'biology' }
                         ];
 
                         let totalMarks = 0;
@@ -166,12 +166,10 @@
                         subjects.forEach(sub => {
                             const score = data[sub.key];
                             const cell = document.getElementById(sub.id);
-                            const row = cell ? cell.closest('tr') : null;
+                            const row = document.getElementById(sub.rowId);
 
-                            if (row) {
-                                // Convert to string and trim to handle empty spaces safely
+                            if (row && cell) {
                                 const scoreStr = (score !== undefined && score !== null) ? score.toString().trim() : "";
-                                // Strict check to filter out N/A and blank entries
                                 const isHidden = scoreStr.toUpperCase() === "N/A" || scoreStr === "";
                                 const parsedScore = parseFloat(scoreStr);
 
@@ -179,9 +177,9 @@
                                     cell.innerText = parsedScore;
                                     totalMarks += parsedScore;
                                     validSubjectCount++;
-                                    row.classList.remove('hidden'); // Show subject row if active
+                                    row.style.display = '';       // ✅ Show row
                                 } else {
-                                    row.classList.add('hidden'); // Fully hide subject row if N/A or blank
+                                    row.style.display = 'none';   // ✅ Hide row reliably
                                 }
                             }
                         });
@@ -189,7 +187,6 @@
                         if (validSubjectCount > 0) {
                             const totalPossible = validSubjectCount * 100;
                             const percentage = ((totalMarks / totalPossible) * 100).toFixed(2);
-
                             document.getElementById('disp-total').innerText = totalMarks + " / " + totalPossible;
                             document.getElementById('disp-percentage').innerText = percentage + "%";
                         } else {
