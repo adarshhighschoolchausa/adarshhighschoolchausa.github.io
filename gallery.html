@@ -26,32 +26,32 @@
                     </div>
                 </div>
                 <nav class="hidden xl:flex space-x-5 text-xs font-semibold uppercase">
-    <a href="index.html" class="hover:text-school-gold transition">Home</a>
-    <a href="about.html" class="hover:text-school-gold transition">About Us</a>
-    <a href="academics.html" class="hover:text-school-gold transition">Academics</a>
-    <a href="facilities.html" class="hover:text-school-gold transition">Facilities & Sports</a>
-    <a href="admissions.html" class="hover:text-school-gold transition">Admissions</a>
-    <a href="gallery.html" class="hover:text-school-gold transition">Gallery</a>
-    <a href="portal.html" class="hover:text-school-gold transition">Student Portal</a>
-    <a href="contact.html" class="hover:text-school-gold transition">Contact Us</a>
-</nav>
+                    <a href="index.html" class="hover:text-school-gold transition">Home</a>
+                    <a href="about.html" class="hover:text-school-gold transition">About Us</a>
+                    <a href="academics.html" class="hover:text-school-gold transition">Academics</a>
+                    <a href="facilities.html" class="hover:text-school-gold transition">Facilities & Sports</a>
+                    <a href="admissions.html" class="hover:text-school-gold transition">Admissions</a>
+                    <a href="gallery.html" class="hover:text-school-gold transition">Gallery</a>
+                    <a href="portal.html" class="hover:text-school-gold transition">Student Portal</a>
+                    <a href="contact.html" class="hover:text-school-gold transition">Contact Us</a>
+                </nav>
                 <div class="xl:hidden">
                     <button id="mobile-menu-button" class="text-white focus:outline-none">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M4 6h16M4 12h16m-7 6h7\"></path></svg>
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
                     </button>
                 </div>
             </div>
         </div>
-       <div id="mobile-menu" class="hidden xl:hidden bg-school-blue p-4 space-y-4 text-sm font-semibold uppercase">
-    <a href="index.html" class="block hover:text-school-gold">Home</a>
-    <a href="about.html" class="block hover:text-school-gold">About Us</a>
-    <a href="academics.html" class="block hover:text-school-gold">Academics</a>
-    <a href="facilities.html" class="block hover:text-school-gold">Facilities & Sports</a>
-    <a href="admissions.html" class="block hover:text-school-gold">Admissions</a>
-    <a href="gallery.html" class="block hover:text-school-gold">Gallery</a>
-    <a href="portal.html" class="block hover:text-school-gold">Student Portal</a>
-    <a href="contact.html" class="block hover:text-school-gold">Contact Us</a>
-</div>
+        <div id="mobile-menu" class="hidden xl:hidden bg-school-blue p-4 space-y-4 text-sm font-semibold uppercase">
+            <a href="index.html" class="block hover:text-school-gold">Home</a>
+            <a href="about.html" class="block hover:text-school-gold">About Us</a>
+            <a href="academics.html" class="block hover:text-school-gold">Academics</a>
+            <a href="facilities.html" class="block hover:text-school-gold">Facilities & Sports</a>
+            <a href="admissions.html" class="block hover:text-school-gold">Admissions</a>
+            <a href="gallery.html" class="block hover:text-school-gold">Gallery</a>
+            <a href="portal.html" class="block hover:text-school-gold">Student Portal</a>
+            <a href="contact.html" class="block hover:text-school-gold">Contact Us</a>
+        </div>
     </header>
 
     <main class="flex-grow">
@@ -76,60 +76,78 @@
 
         <section class="py-12 container mx-auto px-4">
             <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                
-                <div class="gallery-item academic group relative overflow-hidden rounded-xl shadow-lg">
-                    <img src=science.jpg alt="Science Exhibition" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
-                    <div class="absolute inset-0 bg-school-blue/80 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center p-4">
-                        <p class="text-white text-center font-bold uppercase text-sm">Science Exhibition 2026</p>
+
+                <!-- ✅ Each card: fixed height box with bg-gray-100, image uses object-contain to show full image -->
+
+                <div class="gallery-item academic group relative overflow-hidden rounded-xl shadow-lg bg-gray-100">
+                    <div class="w-full h-64 flex items-center justify-center overflow-hidden relative">
+                        <img src="science.jpg" alt="Science Exhibition" class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-school-blue/80 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center p-4">
+                            <p class="text-white text-center font-bold uppercase text-sm">Science Exhibition 2026</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="gallery-item cultural group relative overflow-hidden rounded-xl shadow-lg">
-                    <img src=Annual.jpeg alt="Annual Function" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
-                    <div class="absolute inset-0 bg-school-blue/80 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center p-4">
-                        <p class="text-white text-center font-bold uppercase text-sm">Annual Cultural Day</p>
+                <div class="gallery-item cultural group relative overflow-hidden rounded-xl shadow-lg bg-gray-100">
+                    <div class="w-full h-64 flex items-center justify-center overflow-hidden relative">
+                        <img src="Annual.jpeg" alt="Annual Function" class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-school-blue/80 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center p-4">
+                            <p class="text-white text-center font-bold uppercase text-sm">Annual Cultural Day</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="gallery-item national group relative overflow-hidden rounded-xl shadow-lg">
-                    <img src=Independence.jpeg alt="Independence Day" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
-                    <div class="absolute inset-0 bg-school-blue/80 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center p-4">
-                        <p class="text-white text-center font-bold uppercase text-sm">Independence Day Celebration</p>
+                <div class="gallery-item national group relative overflow-hidden rounded-xl shadow-lg bg-gray-100">
+                    <div class="w-full h-64 flex items-center justify-center overflow-hidden relative">
+                        <img src="Independence.jpeg" alt="Independence Day" class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-school-blue/80 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center p-4">
+                            <p class="text-white text-center font-bold uppercase text-sm">Independence Day Celebration</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="gallery-item pmshri group relative overflow-hidden rounded-xl shadow-lg">
-                    <img src=smartclass.jpeg alt="Smart Class Setup" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
-                    <div class="absolute inset-0 bg-school-blue/80 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center p-4">
-                        <p class="text-white text-center font-bold uppercase text-sm">Smart Classroom Launch</p>
+                <div class="gallery-item pmshri group relative overflow-hidden rounded-xl shadow-lg bg-gray-100">
+                    <div class="w-full h-64 flex items-center justify-center overflow-hidden relative">
+                        <img src="smartclass.jpeg" alt="Smart Class Setup" class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-school-blue/80 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center p-4">
+                            <p class="text-white text-center font-bold uppercase text-sm">Smart Classroom Launch</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="gallery-item academic group relative overflow-hidden rounded-xl shadow-lg">
-                    <img src=library.jpeg alt="Library Session" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
-                    <div class="absolute inset-0 bg-school-blue/80 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center p-4">
-                        <p class="text-white text-center font-bold uppercase text-sm">Reading & Research Hour</p>
+                <div class="gallery-item academic group relative overflow-hidden rounded-xl shadow-lg bg-gray-100">
+                    <div class="w-full h-64 flex items-center justify-center overflow-hidden relative">
+                        <img src="library.jpeg" alt="Library Session" class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-school-blue/80 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center p-4">
+                            <p class="text-white text-center font-bold uppercase text-sm">Reading & Research Hour</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="gallery-item pmshri group relative overflow-hidden rounded-xl shadow-lg">
-                    <img src=computer.jpeg alt="New Lab Equipment" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
-                    <div class="absolute inset-0 bg-school-blue/80 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center p-4">
-                        <p class="text-white text-center font-bold uppercase text-sm">Modern Lab Equipment Upgrade</p>
+                <div class="gallery-item pmshri group relative overflow-hidden rounded-xl shadow-lg bg-gray-100">
+                    <div class="w-full h-64 flex items-center justify-center overflow-hidden relative">
+                        <img src="computer.jpeg" alt="New Lab Equipment" class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-school-blue/80 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center p-4">
+                            <p class="text-white text-center font-bold uppercase text-sm">Modern Lab Equipment Upgrade</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="gallery-item academic group relative overflow-hidden rounded-xl shadow-lg">
-                    <img src=topper.jpeg alt="prize distribution" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
-                    <div class="absolute inset-0 bg-school-blue/80 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center p-4">
-                        <p class="text-white text-center font-bold uppercase text-sm"Prize Distribution</p>
+                <div class="gallery-item academic group relative overflow-hidden rounded-xl shadow-lg bg-gray-100">
+                    <div class="w-full h-64 flex items-center justify-center overflow-hidden relative">
+                        <img src="topper.jpeg" alt="Prize Distribution" class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-school-blue/80 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center p-4">
+                            <p class="text-white text-center font-bold uppercase text-sm">Prize Distribution</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="gallery-item national group relative overflow-hidden rounded-xl shadow-lg">
-                    <img src=Republic.jpeg alt="Republic Day" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
-                    <div class="absolute inset-0 bg-school-blue/80 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center p-4">
-                        <p class="text-white text-center font-bold uppercase text-sm">Republic Day Parade</p>
+                <div class="gallery-item national group relative overflow-hidden rounded-xl shadow-lg bg-gray-100">
+                    <div class="w-full h-64 flex items-center justify-center overflow-hidden relative">
+                        <img src="Republic.jpeg" alt="Republic Day" class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-school-blue/80 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center p-4">
+                            <p class="text-white text-center font-bold uppercase text-sm">Republic Day Parade</p>
+                        </div>
                     </div>
                 </div>
 
@@ -168,26 +186,21 @@
     </footer>
 
     <script>
-        // Toggle mobile menu
         const btn = document.getElementById('mobile-menu-button');
         const menu = document.getElementById('mobile-menu');
         btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
 
-        // Filter Functionality
         function filterGallery(category, currentBtn) {
             const items = document.querySelectorAll('.gallery-item');
             const buttons = document.querySelectorAll('.filter-btn');
 
-            // Reset all filter buttons styling
             buttons.forEach(btn => {
                 btn.classList.remove('active', 'bg-school-gold', 'text-school-blue');
                 btn.classList.add('text-school-blue');
             });
 
-            // Set active class on clicked button
             currentBtn.classList.add('active');
 
-            // Toggle item visibility
             items.forEach(item => {
                 if (category === 'all' || item.classList.contains(category)) {
                     item.classList.remove('hidden');
